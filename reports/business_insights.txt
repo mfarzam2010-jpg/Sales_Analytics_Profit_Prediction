@@ -1,0 +1,1 @@
+Business insights are computed dynamically in the Streamlit Business Recommendations page. The included data is synthetic and all insights are illustrative. Do not present them as real-company findings.

@@ -1,0 +1,1 @@
+The app uses Streamlit sidebar navigation in app.py for a unified multi-section experience. This pages folder is retained to match the requested project layout and can be used for separate multipage scripts if desired.
