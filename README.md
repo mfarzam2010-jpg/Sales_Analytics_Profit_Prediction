@@ -1,88 +1,202 @@
 # Retail Sales Analytics & Profit Prediction
 
-## Business problem
-A retail business needs to understand sales, profit, products, regions, discounts, returns, delivery experience and salesperson performance, and estimate profit for a proposed order.
+## Live Application
 
-## Dataset description
-`data/dataset.csv` contains 2,401 generated order rows with the assignment's requested fields. **Important:** this is a synthetic teaching dataset created because no real company CSV was supplied. It is suitable for demonstrating the complete workflow, but its findings and model scores must not be presented as real-company evidence. Replace it with an authorized real dataset if your instructor requires original business data.
+**[Open Live Streamlit Application](https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/)**
 
-## Project objectives
-- Clean and inspect retail order data.
-- Engineer date, age, margin, discount and delivery features.
-- Explore sales, profit, returns, discounts and customer experience.
-- Train and compare Linear Regression, Decision Tree and Random Forest.
-- Predict expected profit through an interactive Streamlit form.
+## 1. Business Problem
 
-## Tools
-Python, NumPy, Pandas, Matplotlib, Seaborn, Plotly, scikit-learn, Joblib, Streamlit, Jupyter, Docker and pytest.
+Retail businesses need to understand sales, profit, product performance, regional performance, discounts, returns, delivery experience and salesperson performance. They also need a way to estimate the expected profit of a proposed order.
 
-## Data cleaning
-- Parse `Order_Date` as datetime.
-- Remove exact duplicate records.
-- Convert numeric columns and inspect missing values.
-- Impute missing values within model pipelines.
-- Investigate unusual values rather than silently deleting them.
-- Discount is stored as a decimal fraction (e.g. 0.10 = 10%).
+## 2. Project Objectives
 
-## Feature engineering
-Order year, month, quarter, month name, day name, age group, profit margin, discount amount, revenue before discount, delivery status and order-size category.
+- Analyze retail sales and profitability.
+- Identify high-performing products and regions.
+- Understand customer and delivery patterns.
+- Evaluate discount and return trends.
+- Train machine-learning models to predict profit.
+- Provide actionable business recommendations.
 
-## EDA summary
-The dashboard calculates sales, profit, order value, return rate, rating, delivery time, category/region/product/brand/salesperson performance, payment-method usage and discount/delivery relationships.
+## 3. Dataset Description
 
-## Models
-Linear Regression, Decision Tree Regressor and Random Forest Regressor. Model comparison is saved in `reports/model_metrics.csv`.
+The project uses `data/dataset.csv`, containing 2,401 generated order records.
 
-## Evaluation
-MAE, MSE, RMSE and R² are calculated on a held-out test split. See `reports/model_metrics.csv`. The lowest-RMSE pipeline is saved as `models/final_pipeline.pkl`.
+The dataset includes customer, product, sales, discount, shipping, payment, delivery and order-date information.
 
-## Streamlit features
-Eight sections: Home, Dataset Explorer, Sales Dashboard, Product & Regional Analysis, Customer & Delivery Analysis, Model Evaluation, Profit Prediction and Business Recommendations. Includes advanced filters, Plotly charts, configurable profit category boundaries, downloadable filtered data and prediction results, and error checks.
+**Note:** This is a synthetic teaching dataset, not real company data.
 
-## Model explainability
-The model comparison and actual-vs-predicted/residual views help assess performance. For stronger feature-level explainability, add SHAP or permutation importance as a future extension; do not interpret raw one-hot encoded coefficients as business causality.
+## 4. Tools and Technologies
 
-## Business recommendations
-See the Business Recommendations page. Each item contains Finding, Evidence, Recommendation and Expected Result. Validate all recommendations with real company data before acting.
+- Python
+- Pandas and NumPy
+- Matplotlib, Seaborn and Plotly
+- Scikit-learn
+- Joblib
+- Streamlit
+- Jupyter Notebook
+- Git and GitHub
+- Docker
+- Pytest
 
-## Run locally
+## 5. Data Cleaning
+
+- Converted order dates into datetime format.
+- Checked and removed duplicate records.
+- Converted numeric columns into appropriate data types.
+- Checked missing values.
+- Used imputation inside machine-learning pipelines.
+- Investigated unusual values.
+- Prepared data for analysis and model training.
+
+## 6. Exploratory Data Analysis (EDA)
+
+The project explores:
+
+- Sales and profit trends.
+- Product and category profitability.
+- Regional performance.
+- Customer demographics.
+- Discounts and returns.
+- Delivery performance.
+- Payment methods.
+- Salesperson performance.
+
+## 7. Feature Engineering
+
+The project creates additional features, including:
+
+- Order year and month.
+- Quarter.
+- Month and day names.
+- Customer age groups.
+- Profit margin.
+- Discount amount.
+- Revenue before discount.
+- Delivery status.
+- Order-size category.
+
+## 8. Machine Learning Models
+
+Three regression models were trained and compared:
+
+1. Linear Regression
+2. Decision Tree Regressor
+3. Random Forest Regressor
+
+## 9. Model Evaluation Results
+
+The models were evaluated using MAE, MSE, RMSE and R².
+
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Random Forest | 1,417.59 | 2,443.81 | 0.8924 |
+| Decision Tree | 1,977.61 | 3,263.48 | 0.8082 |
+| Linear Regression | 2,921.48 | 4,397.18 | 0.6518 |
+
+## 10. Best Model
+
+**Random Forest Regressor** was selected as the best-performing model because it achieved the lowest RMSE and highest R² among the three tested models.
+
+The saved model pipeline is available at:
+
+`models/final_pipeline.pkl`
+
+## 11. Streamlit Application Features
+
+The application contains eight sections:
+
+1. Home
+2. Dataset Explorer
+3. Sales Dashboard
+4. Product & Regional Analysis
+5. Customer & Delivery Analysis
+6. Model Evaluation
+7. Profit Prediction
+8. Business Recommendations
+
+Additional features include interactive charts, advanced filters, downloadable datasets and prediction results.
+
+## 12. Business Recommendations
+
+The application provides recommendations related to:
+
+- Category profitability.
+- Product returns.
+- Discount management.
+- Delivery experience.
+- Salesperson performance.
+
+These recommendations should be validated using real business data before making actual business decisions.
+
+## 13. Run the Application Locally
+
+Clone the repository:
+
 ```bash
-python -m venv .venv
-# Windows: .venv\\Scripts\\activate
-# macOS/Linux: source .venv/bin/activate
+git clone https://github.com/mfarzam2010-jpg/Sales_Analytics_Profit_Prediction.git
+```
+
+Open the project folder:
+
+```bash
+cd Sales_Analytics_Profit_Prediction
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Install the required libraries:
+
+```bash
 pip install -r requirements.txt
+```
+
+Run the Streamlit application:
+
+```bash
 streamlit run app.py
 ```
 
-## Docker
-```bash
-docker build -t retail-profit-app .
-docker run -p 8501:8501 retail-profit-app
-```
+## 14. Streamlit Deployment
 
-## GitHub
-1. Create a GitHub repository.
-2. Upload this complete folder (not `.venv` or cache files).
-3. Confirm `data/dataset.csv`, model files and `requirements.txt` are included.
+The application is deployed using Streamlit Community Cloud.
 
-## Streamlit Community Cloud
-1. Sign in at https://share.streamlit.io/ using GitHub.
-2. Choose this repository and branch.
-3. Set main file path to `app.py`.
-4. Deploy and test the public URL.
-5. Add your deployment URL here.
+**Live Application:**
 
-**Deployment URL:** Add after deployment.
+https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
 
-## Screenshots
-Add real screenshots of your running app in `screenshots/` and link them here after testing.
+## 15. Screenshots
 
-## Submission checklist
-- [ ] GitHub repository link
-- [ ] Public Streamlit deployment link
-- [ ] Jupyter notebook
-- [ ] Final model and preprocessor pipeline
-- [ ] README
-- [ ] App screenshots
-- [ ] Project presentation
-- [ ] Business insight report
+Application screenshots will be added to the `screenshots/` folder.
+
+## 16. GitHub Repository
+
+[View Source Code on GitHub](https://github.com/mfarzam2010-jpg/Sales_Analytics_Profit_Prediction)
+
+## 17. Project Files
+
+- `app.py` — Main Streamlit application.
+- `data/` — Dataset.
+- `models/` — Saved machine-learning models.
+- `notebooks/` — Jupyter notebook.
+- `pages/` — Supporting project pages.
+- `reports/` — Model metrics and business reports.
+- `tests/` — Automated tests.
+- `utils/` — Utility and preprocessing modules.
+- `requirements.txt` — Project dependencies.
+- `.gitignore` — Files excluded from Git.
+
+---
+
+**Project:** Retail Sales Analytics & Profit Prediction  
+**Deployment:** Streamlit Community Cloud  
+**Source Code:** GitHub
