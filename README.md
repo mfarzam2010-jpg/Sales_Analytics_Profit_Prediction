@@ -204,8 +204,6 @@ https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
 ### Profit Prediction
 ![Profit Prediction 1](screenshots/profit_prediction_screenshot_1.png)
 ![Profit Prediction 2](screenshots/profit_prediction_screenshot_2.png)
-
-### Other Screenshots
 ![Additional Screenshot 1](screenshots/z.png)
 ![Additional Screenshot 2](screenshots/zz.png)
 ![Additional Screenshot 3](screenshots/zzz.png)
