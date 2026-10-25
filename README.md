@@ -1,35 +1,41 @@
 # Retail Sales Analytics & Profit Prediction
 
-## Live Application
-
-**[Open Live Streamlit Application](https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/)**
+A data analytics and machine learning project that analyzes retail sales performance and predicts business profit using a trained Random Forest model. The project includes an interactive Streamlit dashboard with business insights and recommendations.
 
 ## 1. Business Problem
 
-Retail businesses need to understand sales, profit, product performance, regional performance, discounts, returns, delivery experience and salesperson performance. They also need a way to estimate the expected profit of a proposed order.
+Retail businesses need to understand their sales performance, identify profitable products and regions, and estimate the profit of future orders.
+
+This project uses data analytics and machine learning to help businesses make data-driven decisions.
 
 ## 2. Project Objectives
 
-- Analyze retail sales and profitability.
-- Identify high-performing products and regions.
-- Understand customer and delivery patterns.
-- Evaluate discount and return trends.
-- Train machine-learning models to predict profit.
+- Analyze sales and profit trends.
+- Identify profitable product categories and regions.
+- Understand customer and delivery performance.
+- Build a machine learning model to predict profit.
 - Provide actionable business recommendations.
+- Develop an interactive Streamlit web application.
 
 ## 3. Dataset Description
 
-The project uses `data/dataset.csv`, containing 2,401 generated order records.
+- **Dataset:** `data/dataset.csv`
+- **Records:** 2,401 orders
+- **Type:** Synthetic educational dataset
+- **Target Variable:** Profit
 
-The dataset includes customer, product, sales, discount, shipping, payment, delivery and order-date information.
+The dataset contains order, product, customer, regional, discount, delivery, and sales information.
 
-**Note:** This is a synthetic teaching dataset, not real company data.
+*Note: The dataset is synthetic and does not represent actual company transactions.*
 
 ## 4. Tools and Technologies
 
 - Python
-- Pandas and NumPy
-- Matplotlib, Seaborn and Plotly
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
 - Scikit-learn
 - Joblib
 - Streamlit
@@ -38,46 +44,40 @@ The dataset includes customer, product, sales, discount, shipping, payment, deli
 - Docker
 - Pytest
 
-## 5. Data Cleaning
+## 5. Data Cleaning and Preprocessing
 
-- Converted order dates into datetime format.
-- Checked and removed duplicate records.
-- Converted numeric columns into appropriate data types.
-- Checked missing values.
-- Used imputation inside machine-learning pipelines.
-- Investigated unusual values.
-- Prepared data for analysis and model training.
+The project includes:
+
+- Date conversion and formatting.
+- Duplicate record checks and removal.
+- Numeric data type conversion.
+- Missing value checks.
+- Handling missing values through preprocessing.
+- Investigation of unusual values.
+- Preparation of features for machine learning.
 
 ## 6. Exploratory Data Analysis (EDA)
 
-The project explores:
+The analysis covers:
 
 - Sales and profit trends.
-- Product and category profitability.
+- Product and category performance.
 - Regional performance.
-- Customer demographics.
-- Discounts and returns.
+- Customer analysis.
+- Discount and return analysis.
 - Delivery performance.
 - Payment methods.
 - Salesperson performance.
 
 ## 7. Feature Engineering
 
-The project creates additional features, including:
+Relevant features are prepared for machine learning, including categorical and numerical variables.
 
-- Order year and month.
-- Quarter.
-- Month and day names.
-- Customer age groups.
-- Profit margin.
-- Discount amount.
-- Revenue before discount.
-- Delivery status.
-- Order-size category.
+A preprocessing pipeline is used to prepare the input data before model prediction.
 
 ## 8. Machine Learning Models
 
-Three regression models were trained and compared:
+The following regression models were evaluated:
 
 1. Linear Regression
 2. Decision Tree Regressor
@@ -85,7 +85,7 @@ Three regression models were trained and compared:
 
 ## 9. Model Evaluation Results
 
-The models were evaluated using MAE, MSE, RMSE and R².
+The models were evaluated using MAE, RMSE, and R².
 
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
@@ -95,11 +95,13 @@ The models were evaluated using MAE, MSE, RMSE and R².
 
 ## 10. Best Model
 
-**Random Forest Regressor** was selected as the best-performing model because it achieved the lowest RMSE and highest R² among the three tested models.
+Random Forest Regressor achieved the best evaluation results among the tested models.
 
-The saved model pipeline is available at:
+The saved machine learning pipeline is:
 
 `models/final_pipeline.pkl`
+
+It includes preprocessing and the trained prediction model.
 
 ## 11. Streamlit Application Features
 
@@ -114,121 +116,154 @@ The application contains eight sections:
 7. Profit Prediction
 8. Business Recommendations
 
-Additional features include interactive charts, advanced filters, downloadable datasets and prediction results.
+Users can explore data, interact with charts, apply filters, and generate profit predictions.
 
 ## 12. Business Recommendations
 
-The application provides recommendations related to:
+The application provides insights and recommendations related to:
 
 - Category profitability.
 - Product returns.
 - Discount management.
-- Delivery experience.
+- Delivery performance.
 - Salesperson performance.
 
-These recommendations should be validated using real business data before making actual business decisions.
+## 13. Project Installation
 
-## 13. Run the Application Locally
-
-Clone the repository:
+### Step 1: Clone the repository
 
 ```bash
 git clone https://github.com/mfarzam2010-jpg/Sales_Analytics_Profit_Prediction.git
 ```
 
-Open the project folder:
+### Step 2: Open the project folder
 
 ```bash
 cd Sales_Analytics_Profit_Prediction
 ```
 
-Create a virtual environment:
+### Step 3: Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate it on Windows:
+### Step 4: Activate the virtual environment
 
-```bash
-venv\Scripts\activate
+**Windows PowerShell:**
+
+```powershell
+.\venv\Scripts\Activate.ps1
 ```
 
-Install the required libraries:
+**Windows Command Prompt:**
+
+```cmd
+venv\Scripts\activate.bat
+```
+
+### Step 5: Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application:
+### Step 6: Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-## 14. Streamlit Deployment
+## 14. Live Application
 
-The application is deployed using Streamlit Community Cloud.
-
-**Live Application:**
+**Streamlit Deployment:**
 
 https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
-
-## 15. Screenshots
 
 ## 15. Application Screenshots
 
 ### Home Page
-![Home Page](screenshots/aa.png)
 
-### Application Screenshots
-![Screenshot 1](screenshots/image(1).png)
-![Screenshot 2](screenshots/image(2).png)
-![Screenshot 3](screenshots/image(3).png)
-![Screenshot 4](screenshots/image(4).png)
-![Screenshot 5](screenshots/image(5).png)
-![Screenshot 6](screenshots/image(6).png)
-![Screenshot 7](screenshots/image(7).png)
-![Screenshot 8](screenshots/image(8).png)
-![Screenshot 9](screenshots/image(9).png)
-![Screenshot 10](screenshots/image(10).png)
+![Home Page](screenshots/home.png)
 
-### Additional Screenshots
-![Screenshot 11](screenshots/image(20261025-085656).png)
-![Screenshot 12](screenshots/image(20261025-085701).png)
-![Screenshot 13](screenshots/image(20261025-085706).png)
-![Screenshot 14](screenshots/image(20261025-085727).png)
-![Screenshot 15](screenshots/image(20261025-085844).png)
-![Screenshot 16](screenshots/image(20261025-085851).png)
+### Sales Dashboard
+
+![Sales Dashboard](screenshots/dashboard.png)
 
 ### Profit Prediction
-![Profit Prediction 1](screenshots/profit_prediction_screenshot_1.png)
-![Profit Prediction 2](screenshots/profit_prediction_screenshot_2.png)
-![Additional Screenshot 1](screenshots/z.png)
-![Additional Screenshot 2](screenshots/zz.png)
-![Additional Screenshot 3](screenshots/zzz.png)
-![Additional Screenshot 4](screenshots/zzzz.png)
 
+![Profit Prediction](screenshots/prediction.png)
+
+### Model Evaluation
+
+![Model Evaluation](screenshots/model_evaluation.png)
 
 ## 16. GitHub Repository
 
-[View Source Code on GitHub](https://github.com/mfarzam2010-jpg/Sales_Analytics_Profit_Prediction)
+https://github.com/mfarzam2010-jpg/Sales_Analytics_Profit_Prediction
 
-## 17. Project Files
+## 17. Project Structure
 
-- `app.py` — Main Streamlit application.
-- `data/` — Dataset.
-- `models/` — Saved machine-learning models.
-- `notebooks/` — Jupyter notebook.
-- `pages/` — Supporting project pages.
-- `reports/` — Model metrics and business reports.
-- `tests/` — Automated tests.
-- `utils/` — Utility and preprocessing modules.
-- `requirements.txt` — Project dependencies.
-- `.gitignore` — Files excluded from Git.
+```text
+Sales_Analytics_Profit_Prediction/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── Dockerfile
+├── .gitignore
+│
+├── data/
+│   └── dataset.csv
+│
+├── models/
+│   ├── model.pkl
+│   └── final_pipeline.pkl
+│
+├── notebooks/
+│   └── project_analysis.ipynb
+│
+├── pages/
+│   └── README.txt
+│
+├── reports/
+│   ├── business_insights.txt
+│   ├── model_metrics.csv
+│   ├── permutation_importance.csv
+│   ├── project_presentation.pptx
+│   └── test_predictions.csv
+│
+├── screenshots/
+│   ├── home.png
+│   ├── dashboard.png
+│   ├── prediction.png
+│   └── model_evaluation.png
+│
+├── tests/
+│   └── test_project.py
+│
+└── utils/
+    ├── charts.py
+    ├── data_loader.py
+    ├── prediction.py
+    └── preprocessing.py
+```
 
----
+## 18. Testing
 
-**Project:** Retail Sales Analytics & Profit Prediction  
-**Deployment:** Streamlit Community Cloud  
-**Source Code:** GitHub
+The project includes automated tests for:
+
+- Dataset availability and target column.
+- Saved model availability.
+- Successful model loading.
+- Model prediction functionality.
+
+Run the tests using:
+
+```bash
+python -m pytest -v
+```
+
+## 19. License
+
+This project was developed for educational and academic purposes.
