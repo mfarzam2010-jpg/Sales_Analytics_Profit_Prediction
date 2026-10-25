@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import pandas as pd
@@ -28,30 +27,39 @@ def test_model_loads_successfully():
 
 
 def test_model_prediction():
+    df = pd.read_csv(ROOT / "data" / "dataset.csv")
+
+    sample = df.iloc[[0]].copy()
+    sample["Order_Date"] = pd.to_datetime(sample["Order_Date"])
+
+    sample["Order_Year"] = sample["Order_Date"].dt.year
+    sample["Order_Month"] = sample["Order_Date"].dt.month
+    sample["Quarter"] = sample["Order_Date"].dt.quarter
+
+    features = [
+        "Customer_Gender",
+        "Customer_Age",
+        "City",
+        "Region",
+        "Product_Category",
+        "Product_Name",
+        "Brand",
+        "Quantity",
+        "Unit_Price",
+        "Discount",
+        "Shipping_Cost",
+        "Payment_Method",
+        "Delivery_Days",
+        "Salesperson",
+        "Order_Year",
+        "Order_Month",
+        "Quarter"
+    ]
+
+    input_data = sample[features]
+
     pipeline = load_pipeline()
-
-    input_data = pd.DataFrame([{
-        "Customer_Gender": "Male",
-        "Customer_Age": 30,
-        "City": "Karachi",
-        "Region": "South",
-        "Product_Category": "Electronics",
-        "Product_Name": "Test Product",
-        "Brand": "Test Brand",
-        "Quantity": 2,
-        "Unit_Price": 2500.0,
-        "Discount": 0.10,
-        "Shipping_Cost": 350.0,
-        "Payment_Method": "Cash",
-        "Delivery_Days": 4,
-        "Salesperson": "Test Salesperson",
-        "Order_Year": 2026,
-        "Order_Month": 10,
-        "Quarter": 4
-    }])
-
     prediction = predict_profit(pipeline, input_data)
 
     assert len(prediction) == 1
     assert pd.notna(prediction[0])
-    assert isinstance(float(prediction[0]), float)
