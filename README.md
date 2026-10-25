@@ -176,7 +176,41 @@ https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
 
 ## 15. Screenshots
 
-Application screenshots will be added to the `screenshots/` folder.
+## 15. Application Screenshots
+
+### Home Page
+![Home Page](screenshots/aa.png)
+
+### Application Screenshots
+![Screenshot 1](screenshots/image(1).png)
+![Screenshot 2](screenshots/image(2).png)
+![Screenshot 3](screenshots/image(3).png)
+![Screenshot 4](screenshots/image(4).png)
+![Screenshot 5](screenshots/image(5).png)
+![Screenshot 6](screenshots/image(6).png)
+![Screenshot 7](screenshots/image(7).png)
+![Screenshot 8](screenshots/image(8).png)
+![Screenshot 9](screenshots/image(9).png)
+![Screenshot 10](screenshots/image(10).png)
+
+### Additional Screenshots
+![Screenshot 11](screenshots/image(20261025-085656).png)
+![Screenshot 12](screenshots/image(20261025-085701).png)
+![Screenshot 13](screenshots/image(20261025-085706).png)
+![Screenshot 14](screenshots/image(20261025-085727).png)
+![Screenshot 15](screenshots/image(20261025-085844).png)
+![Screenshot 16](screenshots/image(20261025-085851).png)
+
+### Profit Prediction
+![Profit Prediction 1](screenshots/profit_prediction_screenshot_1.png)
+![Profit Prediction 2](screenshots/profit_prediction_screenshot_2.png)
+
+### Other Screenshots
+![Additional Screenshot 1](screenshots/z.png)
+![Additional Screenshot 2](screenshots/zz.png)
+![Additional Screenshot 3](screenshots/zzz.png)
+![Additional Screenshot 4](screenshots/zzzz.png)
+
 
 ## 16. GitHub Repository
 
