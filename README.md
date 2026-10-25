@@ -178,9 +178,7 @@ streamlit run app.py
 
 **Streamlit Deployment:**
 
-https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
-
-#### 15. Application Screenshots
+## 15. Application Screenshots
 
 ### Screenshot 1
 ![Screenshot 1](screenshots/aa.png)
@@ -196,7 +194,6 @@ https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
 
 ### Screenshot 5
 ![Screenshot 5](screenshots/image(20261025-085656).png)
-
 ### Screenshot 6
 ![Screenshot 6](screenshots/image(20261025-085701).png)
 
