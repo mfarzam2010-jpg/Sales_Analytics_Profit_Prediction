@@ -179,95 +179,72 @@ https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
 ## 15. Application Screenshots
 
 ### Screenshot 1
-
 <img src="./screenshots/aa.png" width="800" />
 
 ### Screenshot 2
-
 <img src="./screenshots/image(1).png" width="800" />
 
 ### Screenshot 3
-
 <img src="./screenshots/image(10).png" width="800" />
 
 ### Screenshot 4
-
 <img src="./screenshots/image(2).png" width="800" />
 
 ### Screenshot 5
-
 <img src="./screenshots/image(20261025-085656).png" width="800" />
 
 ### Screenshot 6
-
 <img src="./screenshots/image(20261025-085701).png" width="800" />
 
 ### Screenshot 7
-
 <img src="./screenshots/image(20261025-085706).png" width="800" />
 
 ### Screenshot 8
-
 <img src="./screenshots/image(20261025-085727).png" width="800" />
 
 ### Screenshot 9
-
 <img src="./screenshots/image(20261025-085844).png" width="800" />
 
 ### Screenshot 10
-
 <img src="./screenshots/image(20261025-085851).png" width="800" />
 
 ### Screenshot 11
-
 <img src="./screenshots/image(3).png" width="800" />
 
 ### Screenshot 12
-
 <img src="./screenshots/image(4).png" width="800" />
 
 ### Screenshot 13
-
 <img src="./screenshots/image(5).png" width="800" />
 
 ### Screenshot 14
-
 <img src="./screenshots/image(6).png" width="800" />
 
 ### Screenshot 15
-
 <img src="./screenshots/image(7).png" width="800" />
 
 ### Screenshot 16
-
 <img src="./screenshots/image(8).png" width="800" />
 
 ### Screenshot 17
-
 <img src="./screenshots/image(9).png" width="800" />
 
-### Screenshot 18 — Profit Prediction
-
+### Screenshot 18
 <img src="./screenshots/profit_prediction_screenshot_1.png" width="800" />
 
-### Screenshot 19 — Profit Prediction
-
+### Screenshot 19
 <img src="./screenshots/profit_prediction_screenshot_2.png" width="800" />
 
 ### Screenshot 20
-
 <img src="./screenshots/z.png" width="800" />
 
 ### Screenshot 21
-
 <img src="./screenshots/zz.png" width="800" />
 
 ### Screenshot 22
-
 <img src="./screenshots/zzz.png" width="800" />
 
 ### Screenshot 23
-
 <img src="./screenshots/zzzz.png" width="800" />
 
 ## 16. GitHub Repository
