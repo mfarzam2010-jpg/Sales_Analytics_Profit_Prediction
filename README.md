@@ -4,9 +4,9 @@ A data analytics and machine learning project that analyzes retail sales perform
 
 ## 1. Business Problem
 
-Retail businesses need to understand their sales performance, identify profitable products and regions, and estimate the profit of future orders.
+Retail businesses need to understand sales performance, identify profitable products and regions, and estimate the profit of future orders.
 
-This project uses data analytics and machine learning to help businesses make data-driven decisions.
+This project uses data analytics and machine learning to support data-driven business decisions.
 
 ## 2. Project Objectives
 
@@ -15,7 +15,7 @@ This project uses data analytics and machine learning to help businesses make da
 - Understand customer and delivery performance.
 - Build a machine learning model to predict profit.
 - Provide actionable business recommendations.
-- Develop an interactive Streamlit web application.
+- Develop an interactive Streamlit application.
 
 ## 3. Dataset Description
 
@@ -26,7 +26,7 @@ This project uses data analytics and machine learning to help businesses make da
 
 The dataset contains order, product, customer, regional, discount, delivery, and sales information.
 
-*Note: The dataset is synthetic and does not represent actual company transactions.*
+*Note: This is a synthetic educational dataset, not actual company transaction data.*
 
 ## 4. Tools and Technologies
 
@@ -45,8 +45,6 @@ The dataset contains order, product, customer, regional, discount, delivery, and
 - Pytest
 
 ## 5. Data Cleaning and Preprocessing
-
-The project includes:
 
 - Date conversion and formatting.
 - Duplicate record checks and removal.
@@ -71,9 +69,9 @@ The analysis covers:
 
 ## 7. Feature Engineering
 
-Relevant features are prepared for machine learning, including categorical and numerical variables.
+Relevant numerical and categorical features are prepared for machine learning.
 
-A preprocessing pipeline is used to prepare the input data before model prediction.
+A preprocessing pipeline prepares input data before model prediction.
 
 ## 8. Machine Learning Models
 
@@ -85,8 +83,6 @@ The following regression models were evaluated:
 
 ## 9. Model Evaluation Results
 
-The models were evaluated using MAE, RMSE, and R².
-
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
 | Random Forest | 1,417.59 | 2,443.81 | 0.8924 |
@@ -97,11 +93,11 @@ The models were evaluated using MAE, RMSE, and R².
 
 Random Forest Regressor achieved the best evaluation results among the tested models.
 
-The saved machine learning pipeline is:
+Saved pipeline:
 
 `models/final_pipeline.pkl`
 
-It includes preprocessing and the trained prediction model.
+The saved pipeline includes preprocessing and the trained prediction model.
 
 ## 11. Streamlit Application Features
 
@@ -178,75 +174,101 @@ streamlit run app.py
 
 **Streamlit Deployment:**
 
+https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
+
 ## 15. Application Screenshots
 
 ### Screenshot 1
-![Screenshot 1](screenshots/aa.png)
+
+<img src="./screenshots/aa.png" width="800" />
 
 ### Screenshot 2
-![Screenshot 2](screenshots/image(1).png)
+
+<img src="./screenshots/image(1).png" width="800" />
 
 ### Screenshot 3
-![Screenshot 3](screenshots/image(10).png)
+
+<img src="./screenshots/image(10).png" width="800" />
 
 ### Screenshot 4
-![Screenshot 4](screenshots/image(2).png)
+
+<img src="./screenshots/image(2).png" width="800" />
 
 ### Screenshot 5
-![Screenshot 5](screenshots/image(20261025-085656).png)
+
+<img src="./screenshots/image(20261025-085656).png" width="800" />
+
 ### Screenshot 6
-![Screenshot 6](screenshots/image(20261025-085701).png)
+
+<img src="./screenshots/image(20261025-085701).png" width="800" />
 
 ### Screenshot 7
-![Screenshot 7](screenshots/image(20261025-085706).png)
+
+<img src="./screenshots/image(20261025-085706).png" width="800" />
 
 ### Screenshot 8
-![Screenshot 8](screenshots/image(20261025-085727).png)
+
+<img src="./screenshots/image(20261025-085727).png" width="800" />
 
 ### Screenshot 9
-![Screenshot 9](screenshots/image(20261025-085844).png)
+
+<img src="./screenshots/image(20261025-085844).png" width="800" />
 
 ### Screenshot 10
-![Screenshot 10](screenshots/image(20261025-085851).png)
+
+<img src="./screenshots/image(20261025-085851).png" width="800" />
 
 ### Screenshot 11
-![Screenshot 11](screenshots/image(3).png)
+
+<img src="./screenshots/image(3).png" width="800" />
 
 ### Screenshot 12
-![Screenshot 12](screenshots/image(4).png)
+
+<img src="./screenshots/image(4).png" width="800" />
 
 ### Screenshot 13
-![Screenshot 13](screenshots/image(5).png)
+
+<img src="./screenshots/image(5).png" width="800" />
 
 ### Screenshot 14
-![Screenshot 14](screenshots/image(6).png)
+
+<img src="./screenshots/image(6).png" width="800" />
 
 ### Screenshot 15
-![Screenshot 15](screenshots/image(7).png)
+
+<img src="./screenshots/image(7).png" width="800" />
 
 ### Screenshot 16
-![Screenshot 16](screenshots/image(8).png)
+
+<img src="./screenshots/image(8).png" width="800" />
 
 ### Screenshot 17
-![Screenshot 17](screenshots/image(9).png)
 
-### Screenshot 18
-![Profit Prediction Screenshot 1](screenshots/profit_prediction_screenshot_1.png)
+<img src="./screenshots/image(9).png" width="800" />
 
-### Screenshot 19
-![Profit Prediction Screenshot 2](screenshots/profit_prediction_screenshot_2.png)
+### Screenshot 18 — Profit Prediction
+
+<img src="./screenshots/profit_prediction_screenshot_1.png" width="800" />
+
+### Screenshot 19 — Profit Prediction
+
+<img src="./screenshots/profit_prediction_screenshot_2.png" width="800" />
 
 ### Screenshot 20
-![Screenshot 20](screenshots/z.png)
+
+<img src="./screenshots/z.png" width="800" />
 
 ### Screenshot 21
-![Screenshot 21](screenshots/zz.png)
+
+<img src="./screenshots/zz.png" width="800" />
 
 ### Screenshot 22
-![Screenshot 22](screenshots/zzz.png)
+
+<img src="./screenshots/zzz.png" width="800" />
 
 ### Screenshot 23
-![Screenshot 23](screenshots/zzzz.png)
+
+<img src="./screenshots/zzzz.png" width="800" />
 
 ## 16. GitHub Repository
 
@@ -284,10 +306,7 @@ Sales_Analytics_Profit_Prediction/
 │   └── test_predictions.csv
 │
 ├── screenshots/
-│   ├── home.png
-│   ├── dashboard.png
-│   ├── prediction.png
-│   └── model_evaluation.png
+│   └── Application screenshots
 │
 ├── tests/
 │   └── test_project.py
