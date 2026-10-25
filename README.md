@@ -180,23 +180,76 @@ streamlit run app.py
 
 https://salesanalyticsprofitprediction-zuqkjcug4s3dxsw9w8ams9.streamlit.app/
 
-## 15. Application Screenshots
+#### 15. Application Screenshots
 
-### Home Page
+### Screenshot 1
+![Screenshot 1](screenshots/aa.png)
 
-![Home Page](screenshots/home.png)
+### Screenshot 2
+![Screenshot 2](screenshots/image(1).png)
 
-### Sales Dashboard
+### Screenshot 3
+![Screenshot 3](screenshots/image(10).png)
 
-![Sales Dashboard](screenshots/dashboard.png)
+### Screenshot 4
+![Screenshot 4](screenshots/image(2).png)
 
-### Profit Prediction
+### Screenshot 5
+![Screenshot 5](screenshots/image(20261025-085656).png)
 
-![Profit Prediction](screenshots/prediction.png)
+### Screenshot 6
+![Screenshot 6](screenshots/image(20261025-085701).png)
 
-### Model Evaluation
+### Screenshot 7
+![Screenshot 7](screenshots/image(20261025-085706).png)
 
-![Model Evaluation](screenshots/model_evaluation.png)
+### Screenshot 8
+![Screenshot 8](screenshots/image(20261025-085727).png)
+
+### Screenshot 9
+![Screenshot 9](screenshots/image(20261025-085844).png)
+
+### Screenshot 10
+![Screenshot 10](screenshots/image(20261025-085851).png)
+
+### Screenshot 11
+![Screenshot 11](screenshots/image(3).png)
+
+### Screenshot 12
+![Screenshot 12](screenshots/image(4).png)
+
+### Screenshot 13
+![Screenshot 13](screenshots/image(5).png)
+
+### Screenshot 14
+![Screenshot 14](screenshots/image(6).png)
+
+### Screenshot 15
+![Screenshot 15](screenshots/image(7).png)
+
+### Screenshot 16
+![Screenshot 16](screenshots/image(8).png)
+
+### Screenshot 17
+![Screenshot 17](screenshots/image(9).png)
+
+### Screenshot 18
+![Profit Prediction Screenshot 1](screenshots/profit_prediction_screenshot_1.png)
+
+### Screenshot 19
+![Profit Prediction Screenshot 2](screenshots/profit_prediction_screenshot_2.png)
+
+### Screenshot 20
+![Screenshot 20](screenshots/z.png)
+
+### Screenshot 21
+![Screenshot 21](screenshots/zz.png)
+
+### Screenshot 22
+![Screenshot 22](screenshots/zzz.png)
+
+### Screenshot 23
+![Screenshot 23](screenshots/zzzz.png)
 
 ## 16. GitHub Repository
 
